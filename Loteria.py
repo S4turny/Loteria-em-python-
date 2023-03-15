@@ -48,9 +48,8 @@ def menu():
     elif opt != "1" or "2":
         print("Digite uma opção valida")
         menu()
-
-    contador = 0
-    while contador < 5:
+
+    for i in range(5):
         numipt = int(input("Digite um numero: "))
         if numipt > 60:
             print("Os numeros não podem ser maiores do que 60")
@@ -58,9 +57,8 @@ def menu():
         numeros.append(numipt)
         contador = contador + 1
 
-    alt = 0
-    contador = 0
-    while contador < 5:
+    alt = 0
+    for i in range(5):
         alt = random.randrange(1,60)
         resultados.append(alt)
         contador = contador + 1
